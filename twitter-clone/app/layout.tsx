@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white flex items-center justify-center min-h-screen border border-white">{children}</body>
+      <body className="bg-black text-white flex items-center justify-center min-h-screen">{children}</body>
     </html>
   );
 }

@@ -6,8 +6,8 @@ import LeftSideContainer from "@/components/login_page/left_side_container";
 
 export default function LoginPage() {
   return (
-    <div className="bg-black text-white flex items-center justify-center border border-white" style={{width: "100%", height: "95%"}}>
-        <div className="flex items-center border border-white">
+    <div className="bg-black text-white flex items-center justify-center" style={{width: "100%", height: "95%"}}>
+        <div className="flex items-center">
             <LeftSideContainer/>
             <RightSideContainer/>
         </div>

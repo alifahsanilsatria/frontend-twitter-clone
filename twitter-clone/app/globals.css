@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.login-page-container {
+    display: grid;
+    gap: 3em;
+}

@@ -6,12 +6,11 @@ import LeftSideContainer from "@/components/login_page/left_side_container";
 
 export default function LoginPage() {
   return (
-    <div className="bg-black text-white flex items-center justify-center" style={{width: "100%", height: "95%"}}>
-        <div className="flex items-center">
-            <LeftSideContainer/>
-            <RightSideContainer/>
-        </div>
-        {/* <footer className="absolute bottom-0 w-full text-gray-500 text-xs text-center py-4 space-x-4">
+    <div className="login-page-container border border-black">
+        <LeftSideContainer/>
+        <RightSideContainer/>
+    </div>
+    /* <footer className="absolute bottom-0 w-full text-gray-500 text-xs text-center py-4 space-x-4">
             <a href="#" className="hover:underline">About</a>
             <a href="#" className="hover:underline">Download the X app</a>
             <a href="#" className="hover:underline">Help Center</a>
@@ -30,7 +29,6 @@ export default function LoginPage() {
             <a href="#" className="hover:underline">Directory</a>
             <a href="#" className="hover:underline">Settings</a>
             <span>© 2024 X Corp.</span>
-        </footer> */}
-    </div>
+        </footer> */
   );
 }

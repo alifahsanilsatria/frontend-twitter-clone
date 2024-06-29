@@ -3,7 +3,7 @@ import LoginPageFooter from "./login_page_footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-flow-row gap-y-14">
+    <div className="flex flex-wrap flex-col">
       <LoginPage/>
       <LoginPageFooter/>
     </div>

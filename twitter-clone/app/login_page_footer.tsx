@@ -1,6 +1,6 @@
 export default function LoginPageFooter() {
   return (
-    <div>
+    <div className="login-footer-container">
       <footer className="flex flex-wrap px-[5%] justify-center text-gray-500 text-sm space-x-3 leading-loose">
         <a href="#" className="hover:underline">About</a>
         <a href="#" className="hover:underline">Download the X app</a>

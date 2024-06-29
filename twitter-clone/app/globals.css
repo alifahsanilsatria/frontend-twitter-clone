@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.login-page-x-logo {
+    width: 2.75rem; /* 44px */
+    height: 2.5rem; /* 40px */
+}   
+
+.sign-in-sign-up-container {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3.5rem; /* 56px */
+}
+
 .sign-up-container {
     width: 288px;
 }
@@ -18,7 +35,23 @@
 }
 
 .login-footer-container {
-    padding-top: 60px;
+    position: absolute;
+    bottom: 15px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.login-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    color: rgb(107 114 128);
+    font-size: 13px;
+    line-height: 2;
 }
 
 .login-page-container {
@@ -81,19 +114,57 @@
     }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 950px) {
-    .login-page-container {
-        width: 48.5%;
-
-    }
-}
-
 @media only screen and (min-width: 901px) and (max-width: 1000px) {
     .login-page-container {
-        width: 41%;
+        width: 48.5%;
     }
 }
 
-@media only screen and (min-width: 1001px) {
-    
+@media only screen and (min-width: 1001px) and (max-width: 1060px) {
+    .login-page-container {
+        grid-auto-flow: column;
+        margin-top: 10em;
+        width: 95%;
+    }
+
+    .happening-now-wording {
+        font-size: 75px;
+        width: 100%;    
+    }
+
+    .sign-in-sign-up-container {
+        justify-content: end;
+        row-gap: 1em;
+    }
+
+    .login-page-x-logo {
+        width: 90%;
+        height: 75%;
+        margin-top: 6em;
+    }
+}
+
+@media only screen and (min-width: 1061px) {
+    .login-page-container {
+        grid-auto-flow: column;
+        margin-top: 10em;
+        margin-left: 2em;
+        width: 95%;
+        padding-left: calc((100vw - 1061px) * 0.35);
+    }
+
+    .happening-now-wording {
+        font-size: 75px;
+        width: 100%;
+    }
+
+    .sign-in-sign-up-container {
+        row-gap: 1em;
+    }
+
+    .login-page-x-logo {
+        width: 360.56px;
+        height: 326.42px;
+        margin-top: 5em;
+    }
 }

@@ -1,6 +1,6 @@
-export default function LoginPageFooter() {
+export default function HomepageBeforeLoginFooter() {
   return (
-    <div className="login-footer-container">
+    <div className="homepage-before-login__login-footer-container">
       <footer className="login-footer space-x-3">
         <a href="#" className="hover:underline">About</a>
         <a href="#" className="hover:underline">Download the X app</a>

@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.homepage-before-login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.homepage-before-login__x-logo {
+    width: 2.75rem; /* 44px */
+    height: 2.5rem; /* 40px */
+}   
+
+.homepage-before-login__sign-in-sign-up-container {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3.5rem; /* 56px */
+}
+
+.homepage-before-login__sign-up-container {
+    width: 288px;
+}
+
+.homepage-before-login__sign-in-container {
+    width: 288px;
+}
+
+.homepage-before-login__happening-now-wording {
+    font-weight: 700;
+    color: rgb(255 255 255);
+    line-height: 1.25;
+    font-size: 44px;
+}
+
+.homepage-before-login__login-footer-container {
+    position: absolute;
+    bottom: 15px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.homepage-before-login__login-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    color: rgb(107 114 128);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.homepage-before-login__login-page-container {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 3.5rem; /* 56px */
+    margin-top: 2.5rem; /* 40px */
+    margin-left: 2.25rem; /* 36px */
+    width: 90%;
+}
+
+.homepage-before-login__join-today-wording {
+    font-size: 1.5rem; /* equivalent to text-2xl */
+    font-weight: 600; /* equivalent to font-semibold */
+    color: white; /* equivalent to text-white */
+    padding-bottom: 1.5rem; /* equivalent to pb-6 */
+}
+
+.homepage-before-login__create-account-wording {
+    color: white; /* equivalent to text-white */
+    font-weight: 600; /* equivalent to font-semibold */
+    background-color: #0284c7; /* equivalent to bg-sky-600 */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    width: 100%; /* equivalent to w-full */
+    padding-top: 0.5rem; /* equivalent to py-2 (vertical padding) */
+    padding-bottom: 0.5rem; /* equivalent to py-2 (vertical padding) */
+}
+
+.homepage-before-login__signup-tnc-wording {
+    color: #6b7280; /* equivalent to text-gray-500 */
+    font-size: 0.75rem; /* equivalent to text-xs */
+    padding-top: 0.5rem; /* equivalent to pt-2 */
+}
+
+.homepage-before-login__already-have-an-account-wording {
+    font-size: 1.5rem; /* equivalent to text-2xl */
+    font-weight: 500; /* equivalent to font-medium */
+    color: white; /* equivalent to text-white */ 
+}
+
+.homepage-before-login__sign-in-button {
+    background-color: black; /* equivalent to bg-black */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    color: #0ea5e9; /* equivalent to text-sky-500 */
+    border: 1px solid #0ea5e9; /* equivalent to border border-sky-500 */
+    width: 100%; /* equivalent to w-full */
+    padding-top: 0.5rem; /* equivalent to py-2 (vertical padding) */
+    padding-bottom: 0.5rem; /* equivalent to py-2 (vertical padding) */
+    margin-top: 0.5rem; /* equivalent to mt-2 */
+    font-weight: 500; /* equivalent to font-medium */
+}
+
+@media only screen and (min-width: 501px) {
+    .homepage-before-login__happening-now-wording {
+        font-size: 60px;
+        width: 398.44px;
+    }
+    .homepage-before-login__sign-up-container {
+        width: 311.92px;
+    }
+
+    .homepage-before-login__sign-in-container {
+        width: 311.92px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .homepage-before-login__login-page-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 650px) {
+    .homepage-before-login__login-page-container {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 700px) {
+    .homepage-before-login__login-page-container {
+        width: 77.5%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 750px) {
+    .homepage-before-login__login-page-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 800px) {
+    .homepage-before-login__login-page-container {
+        width: 63.5%;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+    .homepage-before-login__login-page-container {
+        width: 56%;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+    .homepage-before-login__login-page-container {
+        width: 48.5%;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1060px) {
+    .homepage-before-login__login-page-container {
+        grid-auto-flow: column;
+        margin-top: 10em;
+        width: 95%;
+    }
+
+    .homepage-before-login__happening-now-wording {
+        font-size: 75px;
+        width: 100%;    
+    }
+
+    .homepage-before-login__sign-in-sign-up-container {
+        justify-content: end;
+        row-gap: 1em;
+    }
+
+    .homepage-before-login__x-logo {
+        width: 90%;
+        height: 75%;
+        margin-top: 6em;
+    }
+}
+
+@media only screen and (min-width: 1061px) {
+    .homepage-before-login__login-page-container {
+        grid-auto-flow: column;
+        margin-top: 10em;
+        margin-left: 2em;
+        width: 95%;
+        padding-left: calc((100vw - 1061px) * 0.35);
+    }
+
+    .homepage-before-login__happening-now-wording {
+        font-size: 75px;
+        width: 100%;
+    }
+
+    .homepage-before-login__sign-in-sign-up-container {
+        row-gap: 1em;
+    }
+
+    .homepage-before-login__x-logo {
+        width: 360.56px;
+        height: 326.42px;
+        margin-top: 5em;
+    }
+}

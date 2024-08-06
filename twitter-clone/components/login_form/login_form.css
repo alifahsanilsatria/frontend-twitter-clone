@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login_form__close_button {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.login_form__x_logo {
+    width: 28.76px;
+    height: 26px;
+}
+
+.login-form__sign-in-to-x-wording {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}

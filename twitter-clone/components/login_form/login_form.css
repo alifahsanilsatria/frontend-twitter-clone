@@ -2,19 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.login_form__close_button {
+.login-form-header {
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 10px;
+    padding-left: 5%;
+}
+
+.login-form-header__close-button {
     color: white;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
 }
 
-.login_form__x_logo {
-    width: 28.76px;
-    height: 26px;
+.login-form-header__x-logo {
+    width: 40px;
+    height: 40px;
 }
 
-.login-form__sign-in-to-x-wording {
+.login-form-content {
+    padding-top: 55%;
+    padding-left: 7.5%;
+    height: calc(100vh - 55px);
+}
+
+.login-form-content__sign-in-to-x-wording {
     color: white;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
+}
+
+.login-form-content__user-input-and-submit__username {
+    display: block;
 }

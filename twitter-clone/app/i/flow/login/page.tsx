@@ -3,15 +3,17 @@ import "@/components/login_form/login_form.css"
 export default function LoginForm() {
   return (
     <div className="login-form">
-      <span className="login_form__close_button">x</span>
-      <img src="/images/x_logo.png" alt="X Logo" className="login_form__x_logo"/>
-      <div>
-        <p className="login-form__sign-in-to-x-wording">Sign in to X</p>
-        <form>
-          <input type="text" placeholder="Phone, email, or username"></input>
-          <button type="submit" className="bg-white">Next</button>
+      <div className="login-form-header border-white border-2">
+        <p className="login-form-header__close-button border-white border-2">x</p>
+        <img src="/images/x_logo.png" alt="X Logo" className="login-form-header__x-logo border-white border-2"/>
+      </div>
+      <div className="login-form-content border-white border-2">
+        <p className="login-form-content__sign-in-to-x-wording">Sign in to X</p>
+        <form className="login-form-content__user-input-and-submit">
+          <input className="login-form-content__user-input-and-submit__username" type="text" placeholder="Phone, email, or username"></input>
+          <button type="submit" className="bg-white login-form-content__user-input-and-submit__next-button">Next</button>
         </form>
-        <p className="text-gray-500">Don't have an account? <a>Sign up</a></p>
+        <p className="login-form-content__sign-up-suggestion text-gray-500">Don't have an account? <a>Sign up</a></p>
       </div>
     </div>
   );

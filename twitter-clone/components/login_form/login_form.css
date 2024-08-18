@@ -6,7 +6,6 @@
     display: grid;
     grid-auto-flow: column;
     padding-top: 10px;
-    padding-left: 5%;
 }
 
 .login-form-header__close-button {
@@ -15,25 +14,67 @@
     font-size: 1.5rem;
     width: 40px;
     height: 40px;
+    padding-left: 10px;
 }
 
 .login-form-header__x-logo {
     width: 40px;
     height: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
 }
 
 .login-form-content {
-    padding-top: 55%;
-    padding-left: 7.5%;
-    height: calc(100vh - 55px);
+    padding-top: 10px;
+    height: calc(100svh - 55px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
 }
 
 .login-form-content__sign-in-to-x-wording {
     color: white;
     font-weight: 500;
     font-size: 1.65rem;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form-content__user-input-and-submit {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .login-form-content__user-input-and-submit__username {
     display: block;
+    background-color: inherit;
+    border-width: 2px;
+    border-color: rgb(156 163 175);
+    height: 55px;
+}
+
+.login-form-content__user-input-and-submit__next-button {
+    display: block;
+    background-color: rgb(255 255 255);
+    font-weight: 500;
+    border-radius: 9999px;
+    height: 35px;
+}
+
+.login-form-content__sign-up-suggestion {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 501px) {
+    
 }

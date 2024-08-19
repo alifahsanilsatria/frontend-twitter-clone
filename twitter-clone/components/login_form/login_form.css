@@ -75,6 +75,11 @@
     margin-right: auto;
 }
 
-@media only screen and (min-width: 501px) {
-    
+@media only screen and (min-height: 588px) {
+    .login-form-content {
+        padding-top: calc(40svh - 200px);
+    }
+}
+
+@media only screen and (min-width: 703px) {
 }
